@@ -4,9 +4,11 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const jwt = require('jsonwebtoken');
 const config = require('./configs/config.js');
+const cors = require('cors');
 
+app.use(cors());
 
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3004;
 
 //JWT
 app.set('llave', config.llave);
@@ -27,7 +29,8 @@ app.post('/auth', (req, res) => {
         });
         res.json({
             mensaje: 'Autenticación correcta',
-            token: token
+            token: token,
+            idUser: 1
         });
     } else {
         res.json({ mensaje: "Usuario o contraseña incorrectos" });
@@ -65,6 +68,15 @@ app.get('/datos', protectedRoutes, (req, res) => {
 });
 
 // fin JWT
+
+//cors(angular)
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
+    res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+    next();
+});
 
 app.set('port', port);
 

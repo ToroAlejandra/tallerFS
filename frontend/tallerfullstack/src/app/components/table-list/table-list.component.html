@@ -1,0 +1,25 @@
+<div class="container">
+  <!-- Page Content goes here -->
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Símbolo</th>
+        <th>Nombre</th>
+        <th>Tasa de cambio</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let item of userCoins ; let idx = index">
+        <td>{{idx+1}}</td>
+        <td>{{item.simbolo}}</td>
+        <td>{{item.nombre}}</td>
+        <td>{{item.taza_de_cambio}}</td>
+        <td><button (click)="deleteCoins(item)">Delete</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
