@@ -1,1 +1,29 @@
 @import "./materialize-imports.scss";
+
+.table-head{
+ background-color: #F4F4F4;
+}
+
+.btn-general{
+  border-radius: 60px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #292929;
+}
+
+.btn-auth{
+  background-color: #FDDA24;
+}
+
+.btn-ligth{
+  border: 1px solid #2C2A29;
+  background-color: #FFFFFF;
+}
+
+.text-roboto{
+  font-family: $font-roboto;
+}
+
+.space{
+  height: 50px;
+}

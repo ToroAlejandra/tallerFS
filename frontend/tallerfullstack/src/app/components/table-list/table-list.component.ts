@@ -7,8 +7,10 @@ import { environment } from 'src/environments/environment';
   templateUrl: './table-list.component.html',
   styleUrls: ['./table-list.component.scss']
 })
+
 export class TableListComponent implements OnInit {
   userCoins: any;
+  isModal: boolean = false;
 
   constructor(private configService$: ConfigService) { }
 
@@ -24,7 +26,15 @@ export class TableListComponent implements OnInit {
   }
 
   deleteCoins(item:any){
-    console.log(item, '/*/*///*/');
+    console.log(item);
+  }
+
+  showModal(isModal: boolean){
+    this.isModal = isModal;
+  }
+
+  hideModal(event: any){
+    this.isModal = event;
   }
 
 }

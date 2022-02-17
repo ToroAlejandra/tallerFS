@@ -46,7 +46,7 @@ export class AuthComponent implements OnInit {
           }
           //redirect
           localStorage.setItem('id-user',res.idUser);
-          this.router.navigate(['coin-list']);
+          this.router.navigate(['list-coins-user']);
         }
       });
       console.log("Hice click");

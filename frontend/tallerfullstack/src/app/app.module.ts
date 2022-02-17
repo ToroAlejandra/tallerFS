@@ -8,12 +8,20 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { AuthJWTInterceptor } from './auth-jwt.interceptor';
 import { FormsModule } from '@angular/forms';
 import { TableListComponent } from './components/table-list/table-list.component';
+import { AddCoinsComponent } from './components/add-coins/add-coins.component';
+import { ListCoinsCountryComponent } from './components/list-coins-country/list-coins-country.component';
+import { ListUsersComponent } from './components/list-users/list-users.component';
+import { ListManagerComponent } from './components/list-manager/list-manager.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AuthComponent,
-    TableListComponent
+    TableListComponent,
+    AddCoinsComponent,
+    ListCoinsCountryComponent,
+    ListUsersComponent,
+    ListManagerComponent
   ],
   imports: [
     BrowserModule,

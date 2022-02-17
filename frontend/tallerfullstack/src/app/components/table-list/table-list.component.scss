@@ -1,0 +1,42 @@
+.container{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.table-head{
+  font-weight: 600;
+  font-size: 16px;
+  border-bottom: 1px solid #2C2A29;
+}
+
+.table-body{
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.icon-md{
+  background: none;
+  border: none;
+}
+
+.icon-md i{
+  color: #2c2a29c2;
+}
+
+.icon-md:hover {
+  transform: scale(1.2);
+}
+
+.text-roboto{
+  font-weight: 700;
+  font-size: 20px;
+  color: #494949;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+.align-rigth{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+

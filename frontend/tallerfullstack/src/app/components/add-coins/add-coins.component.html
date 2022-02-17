@@ -1,0 +1,26 @@
+<!-- Modal Structure -->
+<div class="row modal-styles">
+  <div class="col s12 ">
+    <div class="col s12">
+      <div class="col s6 offset-s3 container-modal">
+        <p class="text-header">Listado de monedas</p>
+        <div class="input-field col s12">
+          <select class="browser-default">
+            <option value="" disabled selected>Choose your option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+        <div class="col s12 center container-btns">
+          <div class="col s6 center ">
+            <a class="waves-effect waves-light btn btn-general btn-auth">Guardar</a>
+          </div>
+          <div class="col s6 center">
+            <a class="waves-effect waves-light btn btn-general btn-ligth" (click)="isClose(false)">Cancelar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
