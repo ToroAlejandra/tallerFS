@@ -12,6 +12,7 @@ import { AddCoinsComponent } from './components/add-coins/add-coins.component';
 import { ListCoinsCountryComponent } from './components/list-coins-country/list-coins-country.component';
 import { ListUsersComponent } from './components/list-users/list-users.component';
 import { ListManagerComponent } from './components/list-manager/list-manager.component';
+import { ListCountryComponent } from './components/list-country/list-country.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ListManagerComponent } from './components/list-manager/list-manager.com
     AddCoinsComponent,
     ListCoinsCountryComponent,
     ListUsersComponent,
-    ListManagerComponent
+    ListManagerComponent,
+    ListCountryComponent
   ],
   imports: [
     BrowserModule,

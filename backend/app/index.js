@@ -87,6 +87,7 @@ app.use('/api/coins', require('./routes/coins.js'));
 app.use('/api/users', require('./routes/users.js'));
 app.use('/api/country', require('./routes/country.js'));
 app.use('/api/manager', require('./routes/manager.js'));
+app.use('/api/managerall', require('./routes/managerAll.js'));
 
 app.listen(app.get('port'), () => {
     console.log('Api escuchando en el puerto ', app.get('port'));

@@ -22,7 +22,7 @@ export class TableListComponent implements OnInit {
     this.configService$.get(`${environment.urlApi}/api/coins/${localStorage.getItem('id-user')}`)
       .subscribe((res:any) => {
         this.userCoins = res;
-      })
+      });
   }
 
   deleteCoins(item:any){
